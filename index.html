@@ -29,6 +29,24 @@
 * Mostly Cloudy, with a high of 29C and a low of 23C
 </code></pre>
 
+
+<h4><a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h4>
+<p>
+Obtain the python script either with 
+<code>$ git clone https://github.com/prb2/weather.git</code>
+or by downloading the archive and extracting to a directory. Navigate 
+into the directory with the script and make it executable with
+<code>$ chmod +x w.py</code>. Then, the script can be run using the syntax
+seen below.
+</p>
+<p>
+Python is the only dependency. If you already have it installed and the path
+is in your environment, the script can be run as show below. If that doesn't work,
+run the script explicitly with python: <code>$ python w.py &ltcity&gt &ltoption&gt</code>
+</p>
+
+
+
 <h4><a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h4>
 
 <pre><code>$ ./w.py &ltcity&gt &ltoption&gt 
@@ -45,16 +63,63 @@ any of the following:
 <li><code>wind</code> displays current wind conditions</li>
 </p>
 
-
-<h4><a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h4>
+<h4><a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h4>
 
 <pre><code>$ ./w.py houston
+* Houston, United States
+*
+* Currently 27C, Thunder
+</code></pre>
 
+<pre><code>$ ./w.py houston today
 * Houston, United States
 *
 * Thu 14 May 2015
 * Mostly Cloudy, with a high of 29C and a low of 23C
 </code></pre>
+
+<pre><code>$ ./w.py houston tomorrow
+* Houston, United States
+*
+* Fri 15 May 2015
+* PM Thunderstorms, with a high of 30C and a low of 23C
+</code></pre>
+
+<pre><code>$ ./w.py houston week
+* Houston, United States
+*
+* Thu 14 May 2015
+* Mostly Cloudy, with a high of 29C and a low of 23C
+* 
+* Fri 15 May 2015
+* PM Thunderstorms, with a high of 30C and a low of 23C
+* 
+* Sat 16 May 2015
+* PM Thunderstorms, with a high of 31C and a low of 24C
+* 
+* Sun 17 May 2015
+* Thunderstorms, with a high of 30C and a low of 24C
+* 
+* Mon 18 May 2015
+* AM Clouds/PM Sun, with a high of 31C and a low of 23C
+</code></pre>
+
+<pre><code>$ ./w.py houston sun
+* Houston, United States
+*
+* Sunrise: 6:27 am
+* Sunset:  8:04 pm
+</code></pre>
+
+<pre><code>$ ./w.py houston wind
+* Houston, United States
+*
+* ~ Wind ~
+* Chill:     27C
+* Direction: 170 degrees
+* Speed:     8.05 km/h
+</code></pre>
+
 
 <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/prb2/weather">Weather</a> is maintained by <a href="https://github.com/prb2">prb2</a>.</span>
