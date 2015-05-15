@@ -12,12 +12,7 @@ if (len(sys.argv) > 1):
 
 	base = "https://query.yahooapis.com/v1/public/yql?"
 
-	query = '''select * 
-				from weather.forecast 
-				where woeid in (
-					select woeid 
-					from geo.places(1) 
-					where text="houston" ) and u="c"'''
+	query = 'select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + city + '" ) and u="c"'
 
 	# query = "select wind from weather.forecast where woeid=2460286"
 
