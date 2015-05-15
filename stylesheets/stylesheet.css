@@ -58,7 +58,6 @@ a {
   text-align: center;
   background-color: #159957;
   /* background-image: linear-gradient(120deg, #155799, #159957); } */
-  /* background-image: linear-gradient(120deg, #155799, #159957); } */
   background-image: url("../images/sky.jpg"); }
 
 @media screen and (min-width: 64em) {
@@ -115,7 +114,7 @@ a {
   margin-bottom: 1rem;
   font-weight: normal;
   /* color: #159957;  */
-  color: #3b8ddf;
+  color: #1e6bb8;
   }
 .main-content p {
   margin-bottom: 1em; }
