@@ -1,6 +1,6 @@
-# [Weather](http://prb2.github.io/weather/)
+# W
 
-A command line weather client. This project is still in development.
+W is a command line weather client written in python. This project is still in development.
 
 [View project page.](http://prb2.github.io/weather/)
 
