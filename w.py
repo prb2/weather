@@ -22,6 +22,10 @@ if (len(sys.argv) > 1):
 
 	data = json.loads(result);
 	
+	if (data["query"]["results"] == None):
+			print "Invalid city. Please try again."
+			sys.exit(0)
+
 	channel = data["query"]["results"]["channel"]; 
 
 	temp = channel["units"]["temperature"]
