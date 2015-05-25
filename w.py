@@ -5,12 +5,12 @@ import urllib2, urllib
 import json
 
 
-usage = "Usage: \"./weather.py <zipcode> <today/tomorrow/week/weekend>\""
+usage = "Usage: \"./w.py <city> <today/tomorrow/week/sun/wind>\""
 
 if (len(sys.argv) > 1):
 	city = sys.argv[1]
 
-	base = "https://query.yahooapis.com/v1/public/yql?"
+	base = "http://query.yahooapis.com/v1/public/yql?"
 
 	query = 'select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + city + '" ) and u="f"'
 
